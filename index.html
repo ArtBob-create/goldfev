@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gold Mine</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/scriptUP.js" defer></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="preloader">
+      <div class="preloaderImage"></div>
+    </div>
+    <main>
+      <div class="modal">
+        <div class="popup">
+          <object
+            type="image/svg+xml"
+            data="img/svg/popup.svg"
+            class="popup"
+          ></object>
+          <div class="cancel"></div>
+          <div class="popupContainer">
+            <div class="popupSignUp hide">
+              <div class="popupSignUpImg">
+                <object
+                  type="image/svg+xml"
+                  data="img/svg/trolleySignUp.svg"
+                  class="signUpTrolley"
+                ></object>
+              </div>
+              <form action="post" class="popupSignUpForm">
+                <p class="formTitle">Регистрация</p>
+                <input
+                  type="text"
+                  name="signUpUserName"
+                  id="signUpUserName"
+                  class="signUpFormInput"
+                  placeholder="Никнейм"
+                />
+                <input
+                  type="email"
+                  name="signUpEmail"
+                  id="signUpEmail"
+                  class="signUpFormInput"
+                  placeholder="Email"
+                />
+                <input
+                  type="password"
+                  name="signUpPassword"
+                  id="signUpPassword"
+                  class="signUpFormInput"
+                  placeholder="Пароль"
+                />
+                <input
+                  type="password"
+                  name="signUpPassRepeat"
+                  id="signUpPassRepeat"
+                  class="signUpFormInput"
+                  placeholder="Повторите пароль"
+                />
+                <input
+                  type="text"
+                  name="signUpRefCode"
+                  id="signUpRefCode"
+                  class="signUpFormInput"
+                  placeholder="Вас пригласил (код игрока)"
+                />
+                <input
+                  type="checkbox"
+                  name="rulesAgree"
+                  id="rulesAgree"
+                  class="rulesCheckbox"
+                />
+                <label for="rulesAgree"
+                  >С &nbsp; <a href="#">правилами</a>&nbsp; ознакомлен и
+                  согласен</label
+                >
+                <input
+                  type="submit"
+                  value="начать лихорадку"
+                  class="signUpSubmit"
+                />
+              </form>
+            </div>
+
+            <form class="forgotPassContainer">
+              <p class="title">Восстановление пароля</p>
+              <input
+                type="email"
+                name="emailInput"
+                id="emailInput"
+                class="emailInput"
+                placeholder="Введите ваш email"
+              />
+              <input type="submit" value="Продолжить" class="submitInput" />
+            </form>
+
+            <div class="popupNews hide">
+              <div class="popupTitle">Новости</div>
+              <div class="popupContent">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+                nisi cupiditate quis tempora, dolorem cumque sed veniam. Eveniet
+                necessitatibus eligendi ipsam unde laboriosam? Vitae at mollitia
+                atque hic enim et? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Eum inventore aliquam expedita odio commodi
+                quam vero atque, sit quas? Numquam eum nemo similique
+                accusantium facilis magni sint! Quos, optio provident! Lorem
+                ipsum dolor sit amet consectetur, adipisicing elit. Nihil nisi
+                cupiditate quis tempora, dolorem cumque sed veniam. Eveniet
+                necessitatibus eligendi ipsam unde laboriosam? Vitae at mollitia
+                atque hic enim et? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Eum inventore aliquam expedita odio commodi
+                quam vero atque, sit quas? Numquam eum nemo similique
+                accusantium facilis magni sint! Quos, optio provident! Lorem
+                ipsum dolor sit amet consectetur, adipisicing elit. Nihil nisi
+                cupiditate quis tempora, dolorem cumque sed veniam. Eveniet
+                necessitatibus eligendi ipsam unde laboriosam? Vitae at mollitia
+                atque hic enim et? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Eum inventore aliquam expedita odio commodi
+                quam vero atque, sit quas? Numquam eum nemo similique
+                accusantium facilis magni sint! Quos, optio provident! Lorem
+                ipsum dolor sit amet consectetur, adipisicing elit. Nihil nisi
+                cupiditate quis tempora, dolorem cumque sed veniam. Eveniet
+                necessitatibus eligendi ipsam unde laboriosam? Vitae at mollitia
+                atque hic enim et? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Eum inventore aliquam expedita odio commodi
+                quam vero atque, sit quas? Numquam eum nemo similique
+                accusantium facilis magni sint! Quos, optio provident! Lorem
+                ipsum dolor sit amet consectetur, adipisicing elit. Nihil nisi
+                cupiditate quis tempora, dolorem cumque sed veniam. Eveniet
+                necessitatibus eligendi ipsam unde laboriosam? Vitae at mollitia
+                atque hic enim et? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Eum inventore aliquam expedita odio commodi
+                quam vero atque, sit quas? Numquam eum nemo similique
+                accusantium facilis magni sint! Quos, optio provident! Lorem
+                ipsum dolor sit amet consectetur, adipisicing elit. Nihil nisi
+                cupiditate quis tempora, dolorem cumque sed veniam. Eveniet
+                necessitatibus eligendi ipsam unde laboriosam? Vitae at mollitia
+                atque hic enim et? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Eum inventore aliquam expedita odio commodi
+                quam vero atque, sit quas? Numquam eum nemo similique
+                accusantium facilis magni sint! Quos, optio provident! Lorem
+                ipsum dolor sit amet consectetur, adipisicing elit. Nihil nisi
+                cupiditate quis tempora, dolorem cumque sed veniam. Eveniet
+                necessitatibus eligendi ipsam unde laboriosam? Vitae at mollitia
+                atque hic enim et? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Eum inventore aliquam expedita odio commodi
+                quam vero atque, sit quas? Numquam eum nemo similique
+                accusantium facilis magni sint! Quos, optio provident! Lorem
+                ipsum dolor sit amet consectetur, adipisicing elit. Nihil nisi
+                cupiditate quis tempora, dolorem cumque sed veniam. Eveniet
+                necessitatibus eligendi ipsam unde laboriosam? Vitae at mollitia
+                atque hic enim et? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Eum inventore aliquam expedita odio commodi
+                quam vero atque, sit quas? Numquam eum nemo similique
+                accusantium facilis magni sint! Quos, optio provident! Lorem
+                ipsum dolor sit amet consectetur, adipisicing elit. Nihil nisi
+                cupiditate quis tempora, dolorem cumque sed veniam. Eveniet
+                necessitatibus eligendi ipsam unde laboriosam? Vitae at mollitia
+                atque hic enim et? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Eum inventore aliquam expedita odio commodi
+                quam vero atque, sit quas? Numquam eum nemo similique
+                accusantium facilis magni sint! Quos, optio provident! Lorem
+                ipsum dolor sit amet consectetur, adipisicing elit. Nihil nisi
+                cupiditate quis tempora, dolorem cumque sed veniam. Eveniet
+                necessitatibus eligendi ipsam unde laboriosam? Vitae at mollitia
+                atque hic enim et? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Eum inventore aliquam expedita odio commodi
+                quam vero atque, sit quas? Numquam eum nemo similique
+                accusantium facilis magni sint! Quos, optio provident!
+              </div>
+            </div>
+            <div class="popupAboutUs hide">
+              <div class="popupTitle">О нас</div>
+              <div class="popupContent">ТУТ БУДЕТ КОНТЕНТ</div>
+            </div>
+            <div class="popupContacts hide">
+              <div class="popupTitle">Контакты</div>
+              <div class="popupContent"></div>
+            </div>
+            <div class="popupHelp">
+              <div class="popupTitle">Помощь</div>
+              <div class="popupContent">ТУТ БУДЕТ КОНТЕНТ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sky"></div>
+      <object
+        type="image/svg+xml"
+        data="img/svg/clouds.svg"
+        class="clouds1"
+      ></object>
+      <object
+        type="image/svg+xml"
+        data="img/svg/clouds1.svg"
+        class="clouds2"
+      ></object>
+      <object
+        type="image/svg+xml"
+        data="img/svg/clouds2.svg"
+        class="clouds3"
+      ></object>
+      <div class="forest">
+        <img src="img/svg/forest.svg" alt="forest" />
+      </div>
+      <div class="woodDesk">
+        <object
+          type="image/svg+xml"
+          data="img/svg/branch.svg"
+          class="branch"
+        ></object>
+        <object
+          type="image/svg+xml"
+          data="img/svg/ropes.svg"
+          class="ropes"
+        ></object>
+        <object
+          type="image/svg+xml"
+          data="img/svg/board.svg"
+          class="board"
+        ></object>
+        <object
+          type="image/svg+xml"
+          data="img/svg/boards.svg"
+          class="boards"
+        ></object>
+        <p class="siteHead">золотая лихорадка</p>
+        <iframe
+          class="videoHead"
+          src="https://www.youtube.com/embed/RsNCw99vq-Q"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="mainPage visible">
+        <object
+          type="image/svg+xml"
+          data="img/svg/stoneNews.svg"
+          class="stone"
+        ></object>
+        <p class="stoneTitle button music1">Главная</p>
+        <audio id="sound-link" preload="auto">
+          <source src="audio/stone.waw" type="audio/wav" />
+        </audio>
+      </div>
+      <div class="news visible">
+        <object
+          type="image/svg+xml"
+          data="img/svg/stoneNews.svg"
+          class="stone"
+        ></object>
+        <p class="stoneTitle">Новости</p>
+      </div>
+      <div class="aboutUs visible">
+        <object
+          type="image/svg+xml"
+          data="img/svg/stoneAboutUs.svg"
+          class="stone"
+        ></object>
+        <p class="stoneTitle">О нас</p>
+      </div>
+      <div class="contacts visible">
+        <object
+          type="image/svg+xml"
+          data="img/svg/stoneContacts.svg"
+          class="stone"
+        ></object>
+        <p class="stoneTitle">Контакты</p>
+      </div>
+      <div class="help visible">
+        <object
+          type="image/svg+xml"
+          data="img/svg/stoneHelp.svg"
+          class="stone"
+        ></object>
+        <p class="stoneTitle">Помощь</p>
+      </div>
+
+      <div class="mineContainer">
+        <img src="img/svg/mine.svg" class="mine" />
+        <div class="woodTab">
+          <p class="signUp">регистрация</p>
+          <p class="cabinet hide">кабинет</p>
+          <p class="username hide">юзернейм</p>
+          <div class="diamonds">
+            <object
+              type="image/svg+xml"
+              data="img/svg/diamond.svg"
+              class="diamond"
+            ></object>
+          </div>
+        </div>
+
+        <form action="userPage.html" class="loginForm">
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            placeholder="Логин"
+          />
+          <input
+            type="password"
+            name="userPassword"
+            id="userPassword"
+            placeholder="Пароль"
+          />
+          <input type="submit" value="ВХОД" class="signIn" />
+          <div>
+            <input
+              type="checkbox"
+              class="custom-checkbox"
+              name="rememberMe"
+              id="rememberMe"
+            />
+            <label for="rememberMe" class="rememberMe">Запомнить меня</label>
+          </div>
+          <p class="forgotPass">Забыли пароль?</p>
+        </form>
+      </div>
+      <div class="statsPlateContainer">
+        <div class="mobileStatsDesk">
+          <object
+            type="image/svg+xml"
+            data="img/svg/mobileStats.svg"
+            class="mobileStats"
+          ></object>
+        </div>
+        <object
+          type="image/svg+xml"
+          data="img/svg/statsPlate.svg"
+          class="statsPlate"
+        ></object>
+        <div class="stats">
+          <p class="titleRow">Нас уже</p>
+          <b class="statsRow">532 человека</b>
+          <p class="titleRow">Выплачено</p>
+          <b class="statsRow">123456789 руб</b>
+        </div>
+      </div>
+    </main>
+    <script>
+      var soundLink = $('#sound-link')[0];
+      $('.music1 a').mouseenter(function () {
+        soundLink.play();
+      });
+    </script>
+    <footer class="footer">
+      <div class="footerNav">
+        <div class="logoContainer">
+          <a href="#">
+            <object
+              type="image/svg+xml"
+              data="img/svg/logo.svg"
+              class="logo"
+            ></object>
+          </a>
+        </div>
+        <div class="footerMenuSocialLang">
+          <ul class="footerMenu">
+            <a href="#"><li class="footerMenuElement">ГЛАВНАЯ</li></a>
+            <li class="footerMenuElement">НОВОСТИ</li>
+            <li class="footerMenuElement">О НАС</li>
+            <li class="footerMenuElement">КОНТАКТЫ</li>
+            <li class="footerMenuElement">ПОМОЩЬ</li>
+          </ul>
+          <div class="footerSocialLang">
+            <div class="social">
+              <a href="http://vk.com" target="_blank"
+                ><img class="socialElement" src="img/svg/vk.svg" alt="vk"
+              /></a>
+              <a href="http://instagram.com" target="_blank"
+                ><img
+                  class="socialElement"
+                  src="img/svg/instagram.svg"
+                  alt="instagram"
+              /></a>
+              <a href="http://web.telegram.org" target="_blank"
+                ><img
+                  class="socialElement"
+                  src="img/svg/telegram.svg"
+                  alt="telegram"
+              /></a>
+            </div>
+            <div class="lang">
+              <a href="#">
+                <img class="langFlag" src="img/svg/rus.svg" alt="rus"
+              /></a>
+              <a href="#"
+                ><img class="langFlag" src="img/svg/eng.svg" alt="eng"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerCopyright">
+        2018-2020 Gold-Mine. Все права защищены.
+      </div>
+    </footer>
+  </body>
+</html>
